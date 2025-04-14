@@ -1,0 +1,175 @@
+<html>
+<head>
+  <title> Order Form</title>
+  <style>
+    body {
+
+      font-family: Arial;
+      background="C:\Users\arti2\Desktop\website background\gggg.jpeg";
+      padding: 20px;
+    }
+    .form-box {
+      background-color: white;
+      padding: 50px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .group-label {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+    .checkbox-group {
+      margin-left: 20px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Order Form</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" required>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <!-- Pizza Group -->
+    <div class="group-label">Pizza</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Onion Pizza Regular - 120.00"> Onion Pizza Regular - ₹120.00</label>
+<label><input type="checkbox" name="item" value="Onion Pizza medium - 240.00"> Onion Pizza medium- ₹240.00</label>
+<label><input type="checkbox" name="item" value="Onion Pizza large - 330.00"> Onion Pizza large- ₹240.00</label>
+<label><input type="checkbox" name="item" value="Corn Pizza regular- 240.00"> Corn Pizza regular - ₹120.00</label>
+ <label><input type="checkbox" name="item" value="Corn Pizza Medium - 240.00"> Corn Pizza Medium - ₹240.00</label>
+<label><input type="checkbox" name="item" value="Corn Pizza Medium - 240.00"> Corn Pizza large - ₹330.00</label>
+<label><input type="checkbox" name="item" value="Mushroom Pizza Large - 360.00"> Mushroom Pizza regular - ₹160.00</label>
+<label><input type="checkbox" name="item" value="Mushroom Pizza Large - 360.00"> Mushroom Pizza medium - ₹260.00</label>
+<label><input type="checkbox" name="item" value="Mushroom Pizza Large - 360.00"> Mushroom Pizza Large - ₹360.00</label>
+<label><input type="checkbox" name="item" value="Achaari Pizza regular - 360.00"> Achaari Pizza Regular - ₹120.00</label>
+<label><input type="checkbox" name="item" value="Achaari Pizza regular - 360.00"> Achaari Pizza Medium - ₹240.00</label>
+<label><input type="checkbox" name="item" value="Achaari Pizza regular - 360.00"> Achaari Pizza large - ₹330.00</label>
+
+ 
+<label><input type="checkbox" name="item" value="Fully Veg Pizza Medium - 280.00"> Fully Veg Pizza regular - ₹180.00</label>
+
+<label><input type="checkbox" name="item" value="Fully Veg Pizza Medium - 280.00"> Fully Veg Pizza Medium - ₹280.00</label>
+<label><input type="checkbox" name="item" value="Fully Veg Pizza Medium - 280.00"> Fully Veg Pizza large - ₹380.00</label>
+    </div>
+
+    <!-- Fries & Sides Group -->
+    <div class="group-label">Fries & Sides</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Zingy Parcel - 35.00"> Zingy Parcel - ₹35.00</label>
+      <label><input type="checkbox" name="item" value="Paneer Parcel - 50.00"> Paneer Parcel - ₹50.00</label>
+<label><input type="checkbox" name="item" value="Cheesy Fries - 100.00"> French Fries - ₹60.00</label>
+<label><input type="checkbox" name="item" value="Cheesy Fries - 100.00"> Loaded Fries - ₹80.00</label>
+<label><input type="checkbox" name="item" value="Cheesy Fries - 100.00"> Masala Fries - ₹90.00</label>
+      <label><input type="checkbox" name="item" value="Cheesy Fries - 100.00"> Cheesy Fries - ₹100.00</label>
+    </div>
+
+    <!-- Burger Group -->
+    <div class="group-label">Burger</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Aloo Tikki Burger - 35.00"> Aloo Tikki Burger - ₹35.00</label>
+<label><input type="checkbox" name="item" value="Paneer Burger - 90.00"> Veggie Burger - ₹50.00</label>
+<label><input type="checkbox" name="item" value="Paneer Burger - 90.00"> Chessey Burger - ₹60.00</label>
+<label><input type="checkbox" name="item" value="Paneer Burger - 90.00"> Spicy Mix Burger - ₹70.00</label>
+<label><input type="checkbox" name="item" value="Paneer Burger - 90.00"> Mac-N-Cheese Burger - ₹90.00</label>
+      <label><input type="checkbox" name="item" value="Paneer Burger - 90.00"> Paneer Burger - ₹90.00</label>
+      <label><input type="checkbox" name="item" value="King Burger - 90.00"> King Burger - ₹90.00</label>
+    </div>
+
+    <!-- Pasta Group -->
+    <div class="group-label">Pasta</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Red Pasta - 80.00"> Red Pasta - ₹80.00</label>
+<label><input type="checkbox" name="item" value="Red Pasta - 80.00"> White Pasta - ₹80.00</label>
+      <label><input type="checkbox" name="item" value="Zesty Pasta - 90.00"> Zesty Pasta - ₹90.00</label>
+<label><input type="checkbox" name="item" value="Red Pasta - 80.00"> Tandoori Pasta - ₹90.00</label>
+<label><input type="checkbox" name="item" value="Red Pasta - 80.00"> Mix Pasta - ₹100.00</label>
+      <label><input type="checkbox" name="item" value="Mix Pasta - 100.00"> Makhani Pasta - ₹100.00</label>
+    </div>
+
+    <!-- Sandwich Group -->
+    <div class="group-label">Sandwich</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Grilled Sandwich - 80.00"> Grilled Sandwich - ₹80.00</label>
+<label><input type="checkbox" name="item" value="Cheese Grilled Sandwich - 90.00"> Spicy Grilled Sandwich - ₹80.00</label>
+      <label><input type="checkbox" name="item" value="Cheese Grilled Sandwich - 90.00"> Cheese Grilled Sandwich - ₹90.00</label>
+<label><input type="checkbox" name="item" value="Cheese Grilled Sandwich - 90.00"> Achaari Sandwich - ₹90.00</label>
+<label><input type="checkbox" name="item" value="Cheese Grilled Sandwich - 90.00"> Mac-N-Cheese Sandwich - ₹120.00</label>
+    </div>
+
+    <!-- Shakes Group -->
+    <div class="group-label">Shakes</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Strawberry Shake - 80.00"> Strawberry Shake - ₹80.00</label>
+<label><input type="checkbox" name="item" value="Vnilla Shake - 80.00"> Vanilla Shake - ₹80.00</label>
+<label><input type="checkbox" name="item" value="Strawberry Shake - 80.00"> Chocolate Shake - ₹80.00</label>
+      <label><input type="checkbox" name="item" value="Oreo Shake - 90.00"> Oreo Shake - ₹90.00</label>
+      <label><input type="checkbox" name="item" value="Blueberry Shake - 120.00"> Blueberry Shake - ₹120.00</label>
+    </div>
+
+    <!-- Mocktail Group -->
+    <div class="group-label">Mocktail</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Virgin Mojito - 80.00"> Virgin Mojito - ₹80.00</label>
+      <label><input type="checkbox" name="item" value="Green Apple Soda - 90.00"> Green Apple Soda - ₹90.00</label>
+    </div>
+
+    <!-- Drinks Group -->
+    <div class="group-label">Drinks</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="item" value="Cold Coffee - 70.00"> Cold Coffee - ₹70.00</label>
+      <label><input type="checkbox" name="item" value="Coke/Sprite - 30.00"> Coke/Sprite 350ml - ₹30.00</label>
+      <label><input type="checkbox" name="item" value="Mineral Water"> Mineral Water (M.R.P)</label>
+<label><input type="checkbox" name="item" value="Mineral Water">  Fruit Drink (M.R.P)</label>
+    </div>
+
+    <label>Quantity:</label>
+    <input type="number" min="1" required>
+
+    <label>Address:</label>
+    <textarea rows="3" required></textarea>
+
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+
+</body>
+</html>
